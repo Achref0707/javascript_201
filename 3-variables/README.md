@@ -11,13 +11,13 @@
    weird.
 
    ```js
-   var "animal" = "monkey";
-   var "monkey" = animal;
-   var x= 15;
-   var y =10;
-   var var = "huh?";
-   var true = false;
-   var isTenEven = 10 % 2 = 0;
+   var "animal" = "monkey";         var animal ="monkey";
+   var "monkey" = animal;           var monkey ="animal";
+   var x= 15; 
+   var y =10;  
+   var var = "huh?";     var x="huh?";
+   var true = false;     var test= false ;
+   var isTenEven = 10 % 2 = 0;  var isTenEven= 10 % 2;
    ```
 
 2. Perform the following in the console:
@@ -38,22 +38,22 @@
    ```js
    var x = 5;
    x + 10;
-   x; // => ???
+   x; // => 5
    ```
 
    ```js
    var x = 17;
    x = (x + 1) / 2;
    x * 4;
-   x; // => ???
+   x; // => ??? 9
    ```
-
+    
    ```js
    var x = 5;
    var y = 20;
    x = y;
    y = y + 7;
-   x; // => ???
+   x; // => ??? 20
    ```
 
    ```js
@@ -62,7 +62,7 @@
    x = (x * 4) - 3;
    x + 17;
    x = x + y;
-   x; // => ???
+   x; // => ??? 42
    ```
 
 4. Write a function called `counter` that, when invoked, always returns a number
